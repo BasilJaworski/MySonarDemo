@@ -8,9 +8,7 @@ jobs:
     steps:
       - name: Get code
         uses: actions/checkout@v4
-      - name: Install dependencies
-        run: 'pwd'
-      - run: 'ls -a'
-      - run: 'npm install'
-      - name: Build project
-        run: 'npm build'
+      - name: Apt update
+        run: 'apt update'
+      - name: Install requirements
+        run: 'pip install -r reuirements.txt'
