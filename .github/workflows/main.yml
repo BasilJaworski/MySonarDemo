@@ -9,6 +9,6 @@ jobs:
       - name: Get code
         uses: actions/checkout@v4
       - name: Apt update
-        run: 'apt update'
+        run: 'sudo apt update'
       - name: Install requirements
-        run: 'pip install -r reuirements.txt'
+        run: 'sudo pip install -r reuirements.txt'
