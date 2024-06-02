@@ -13,7 +13,7 @@ from db import (ProductModel,
 app = Flask(__name__)
 CORS(app, resources={r"/api/*": {"origins": "*"}})
 api = Api(app)
-
+print("Hi")
 
 # Define the resources
 class Products(Resource):
