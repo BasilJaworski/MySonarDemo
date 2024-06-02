@@ -17,7 +17,7 @@ jobs:
       - name: Update database
         run: 'python db.py'
       - name: Start server
-        run: 'python app.py -d --host localhost --port 5000'
+        run: 'python app.py --host localhost --port 5000 -d'
       - name: Start test
         run: 'python test.py'
       
