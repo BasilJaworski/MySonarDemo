@@ -12,3 +12,6 @@ jobs:
         run: 'sudo apt update'
       - name: Install requirements
         run: 'sudo pip install -r requirements.txt'
+      - name: Install request library
+        run: 'apt update && sudo pip install request'
+      
